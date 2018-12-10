@@ -1,0 +1,47 @@
+{
+  "data": {
+    "title": "JavaScript Flashcards - Movie Edition",
+    "cards": [
+      {
+        "question": "Who was the male lead in the 1926 movie 'The General'?",
+        "hint": "He was also a comedian.",
+        "answer": "Buster Keaton"
+      },
+      {
+        "question": "Who was the child actor in the 1921 movie 'The Kid'?",
+        "hint": "He played Uncle Fester in a TV series.",
+        "answer": "Jackie Coogan"
+      },
+      {
+        "question": "Who played King Arthur in the 1975 movie 'Monty Python and the Holy Grail'",
+        "hint": "His initials are G.A.C.",
+        "answer": "Graham Chapman"
+      },
+      {
+        "question": "What film actor is known as the original 'Man of a thousand faces'?",
+        "hint": "He played the Hunchback of Notre Dame in 1923 and The Phantom of the Opera in 1925.",
+        "answer": "Lon Chaney"
+      },
+      {
+        "question": "What trio of brothers appearing together in films had birth names Leonard, Adolph, and Julius?",
+        "hint": "One played the harp and another the piano.",
+        "answer": "The Marx Brothers"
+      },
+      {
+        "question": "What leading lady comedian appeared in early films with Charlie Chaplin and Roscoe Arbuckle?",
+        "hint": "Her first name rhymes with 'table'.",
+        "answer": "Mabel Normand"
+      },
+      {
+        "question": "What Walt Disney character from the silent era pre-dated Mickey Mouse?",
+        "hint": "He had long ears.",
+        "answer": "Oswald the Lucky Rabbit"
+      },
+      {
+        "question": "In the movie Breakfast at Tiffany's, what was the name of Holly Golightly's cat?",
+        "hint": "Three letters",
+        "answer": "Cat, or she didn't name it."
+      }
+    ]
+  }
+}

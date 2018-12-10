@@ -1,0 +1,20 @@
+extends main.pug
+block card
+  section.flashcards
+    div(class=`card card-${thisSide}`)
+      .card-header
+      h1.card-title= thisSide
+      #content
+        h2= text
+        if hint
+          p#hint(class='hint', style='display: none')
+            i Hint: #{hint}
+      .card-flip-wrap
+        a(href=`/cards/${id}?side=${flipSide}`)
+          img.card-flip(src='/img/flip.svg')
+      .card-next
+        a(href='/cards')
+          img(src='/img/next.svg')
+    case thisSide
+      when "question"
+        script(src='/scripts/hint.js')

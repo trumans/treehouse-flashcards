@@ -1,0 +1,22 @@
+extends layout
+
+block body
+  section.namecard
+    if name
+      .namecard-hello
+        p.namecard-greeting Welcome, #{name} !
+        form.namecard-exit(action='/goodbye', method='POST')
+          button(type='submit')
+            img(src='/img/close.svg')
+      unless thisSide
+        h1.namecard-prompt Let's get started
+        a.namecard-submit(href='/cards') Begin!
+    else
+      .namecard-hello
+        p.namecard-greeting Hello, student!
+      form.namecard-form(action='/hello', method='post')
+        label.namecard-prompt
+          | Please enter your name:
+        input.namecard-name(type='text', name='username')
+        button.namecard-submit(type='submit') Submit
+  block card
