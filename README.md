@@ -51,7 +51,7 @@ Defined for only post requests. Clears the user name cookie and redirects to
 
 ## /cards/#?side=type ##
 Display the card at index _#_ from the cards array. _Type_ is either the value
-_question_ or _answer_. The question/answer and hint is passed to the Pug
+_question_ or _answer_. The question/answer and hint are passed to the Pug
 template using response.locals properties. If the side displayed is the
 question the HTML includes a JS script which adds a Show Hint button to display 
 the hint when clicked.
