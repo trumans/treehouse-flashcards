@@ -23,7 +23,10 @@ app.use(mainRoutes);
 const cardRoutes = require('./routes/cards');
 app.use('/cards', cardRoutes);  // apply to routes starting with /cards
 
-// capture routes not defined and route to show a better 404 message.
+const about = require('./routes/about');
+app.use('/about', about);
+
+// capture routes not defined to show a 404 message.
 app.use((req, res, next) => {
   err = new Error('The page was not found');
   err.statusCode = 404;
