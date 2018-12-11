@@ -15,9 +15,11 @@ router.get('/', (req, res) => {
 // define /cards/#
 router.get('/:id', (req, res, next) => {
   const { id } = req.params;
-  if ( cards[id] === undefined ) next();
+  // if id is not a valid index into cards then exit this function
+  //   to presumably be caught by the 'page not found' function
+  if ( cards[id] === undefined ) return next();
   let { side } = req.query;
-  // set/reset side if not valid
+  // set/reset side if not an expected value
   if ( !['question', 'answer'].includes(side) ) side = 'question';
   res.locals.name = req.cookies.username;
   res.locals.text = cards[id][side];
