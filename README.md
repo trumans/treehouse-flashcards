@@ -3,9 +3,8 @@ Flashcard application with cookie to store user name
 
 
 # To launch app #
-  1. (Optional, to have nodemon autorestart app) in terminal window: nodemon app.js  
-  2. in terminal window: node app.js
-  3. in browser goto localhost:3000
+  1. In terminal window: node app.js (or, to use nodemon to autorestart app when files are edited: nodemon app.js)
+  2. in browser goto localhost:3000
 
 # Typical flow #
   - In a browser open localhost:3000
